@@ -1,0 +1,42 @@
+.layer {
+  bottom: 7%;
+  left: 10%;
+  background-color: white;
+  width: 80%;
+}
+.bigBox {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.BOx{
+    width: 600px;
+    height: 600px;
+background-image:url(portfolio-1.jpg) ;
+background-position: center;
+background-size: cover;
+position: relative;
+}
+.BOx i {
+  font-size: 30px;
+  position: absolute;
+  cursor: pointer;
+}
+#close{
+  top: 10px;
+  right: 10px;
+}
+#next{
+  top: 50%;
+  right: 10px;
+}
+#prev{
+  top: 50%;
+  left: 10px;
+}
