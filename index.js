@@ -39,3 +39,21 @@ prev.addEventListener("click", function () {
 clodse.addEventListener("click", function () {
   box.classList.add("d-none");
 });
+
+document.addEventListener("keydown", function (e) {
+  if (e.key == "ArrowRight") {
+    slide(1)
+  }
+  else if (e.key == "ArrowLeft") {
+    slide(-1)
+  } else if (e.key == "Escape") {
+    box.classList.add("d-none");
+  }
+  
+})
+document.addEventListener("click", function (e) {
+  console.log(e.target);
+  if (e.target.classList.contains("bigBox")) {
+    box.classList.add("d-none");
+  }
+})
